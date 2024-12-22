@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-md px-6 py-4 flex items-center justify-between">
       <div className="flex items-center space-x-4">
-        <img src="/logo.png" alt="Logo" className="h-8" />
+        <Image src="" alt="Logo" className="h-8 w-8" />
         <nav>
           <ul className="flex space-x-4">
             <li>

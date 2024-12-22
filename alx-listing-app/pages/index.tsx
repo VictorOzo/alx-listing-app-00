@@ -1,14 +1,15 @@
-const HeroSection: React.FC = () => {
+import HeroSection from "@/components/ui/HeroSection";
+import FilterSection from "@/components/ui/FilterSection";
+import ListingSection from "@/components/ui/ListingSection";
+
+const HomePage: React.FC = () => {
   return (
-    <section
-      className="bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-white"
-      style={{ backgroundImage: "url('/hero-bg.jpg')" }}>
-      <h1 className="text-4xl font-bold">Find your favorite place here!</h1>
-      <p className="text-lg mt-2">
-        The best prices for over 2 million properties worldwide.
-      </p>
-    </section>
+    <>
+      <HeroSection />
+      <FilterSection />
+      <ListingSection />
+    </>
   );
 };
 
-export default HeroSection;
+export default HomePage;
